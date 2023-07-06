@@ -1,0 +1,17 @@
+{
+  "name": "qbt-tracker-renamer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/add-backup-tracker.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "magnet-uri": "^7.0.5",
+    "qbittorrent-api-v2": "^1.2.2"
+  },
+  "type": "module"
+}
