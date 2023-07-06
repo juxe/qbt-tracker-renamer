@@ -62,11 +62,12 @@ function sleep (ms) {
 }
 
 while (true) {
+  const seconds = process.env.THROTTLE || 2 * 60
   try {
     await addBackupTracker()
   } catch (e) {
     // log and continue
     console.log(e)
   }
-  await sleep(2 * 60 * 1000)
+  await sleep(seconds * 1000)
 }
